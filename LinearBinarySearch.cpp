@@ -53,8 +53,10 @@ void binSearch(struct myArr* a, int n){
 
     low=0;
     high=a->usize-1;
-    if((a->ptr)[low]==n || (a->ptr)[high]==n)
+    if((a->ptr)[low]==n || (a->ptr)[high]==n){
         cout<<"element found";
+        return;
+    }
 
     do{
         mid=floor((low+high)/2);
